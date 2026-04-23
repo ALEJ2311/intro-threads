@@ -1,6 +1,6 @@
 package ec.edu.utpl.carreras.computacion.proava;
 
-public class TimerTask implements Runnable{
+public class TimerTask{
     private final String name;
     private int seconds;
 
@@ -9,7 +9,7 @@ public class TimerTask implements Runnable{
         this.seconds = seconds;
     }
 
-    @Override
+
     public void run() { while (seconds > 0) {
         System.out.printf("%s: %d segundos restantes%n", name, seconds); seconds--;
         try {
