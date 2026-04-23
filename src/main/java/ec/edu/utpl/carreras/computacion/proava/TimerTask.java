@@ -1,10 +1,10 @@
 package ec.edu.utpl.carreras.computacion.proava;
 
-public class TimerTask {
+public class TimerTask implements  Runnable{
     private final String name;
     private int seconds;
 
-    public TimerTask(String name, int seconds) {
+    public TimerTask (String name, int seconds) {
         this.name = name;
         this.seconds = seconds;
     }
